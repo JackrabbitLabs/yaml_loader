@@ -1,0 +1,67 @@
+version: 1
+vid: 1000
+sid: 0001
+svid: 2000
+ssid: 0002
+sn: 12345678
+ingress_port: 1
+total_ports: 3
+max_vcss: 2
+max_vppbs: 3
+hdm_decoders: 1
+ports:
+  0: 
+    state: 4
+    dv: 1
+    dt: 1
+    cv: 1
+    max_link_width: 16
+    neg_link_width: 16
+    speeds: 0
+    max_link_speed: 5
+    cur_link_speed: 4
+    ltssm: 4
+    first_lane: 0
+    lf: 0
+    ld: 0
+  1: 
+    state: 3
+    dv: 1
+    dt: 4
+    cv: 3
+    max_link_width: 16
+    neg_link_width: 16
+    speeds: 0
+    max_link_speed: 5
+    cur_link_speed: 5
+    ltssm: 4
+    first_lane: 0
+    lf: 0
+    ld: 16
+vcss:
+  0:
+    state: 1
+    uspid: 0
+    num_vppb: 2
+    vppbs:
+      0:
+        bind_status: 2
+        portid: 0
+        ldid: 0
+      1: 
+        bind_status: 2
+        portid: 1
+        ldid: 0
+  1:
+    state: 1
+    uspid: 3
+    num_vppb: 2
+    vppbs:
+      0:
+        bind_status: 2
+        portid: 3
+        ldid: 0
+      1: 
+        bind_status: 2
+        portid: 4
+        ldid: 0
