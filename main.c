@@ -19,7 +19,7 @@
 #include <glib-2.0/glib.h>
 #include <yaml.h> 	// apt install libyaml-dev libyaml-doc
 
-#include "yamlloader.h"
+#include "main.h"
 
 /* MACROS ====================================================================*/
 
