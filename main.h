@@ -39,6 +39,6 @@ typedef struct yl_obj
 GHashTable *yl_load(char *filename);
 int yl_free(GHashTable *ht);
 int yl_print(GHashTable *ht);
-GHFunc _yl_print_entry(gpointer key, gpointer value, gpointer user_data);
+void _yl_print_entry(gpointer key, gpointer value, gpointer user_data);
 
 #endif //ifndef _YAMLLOADER_H

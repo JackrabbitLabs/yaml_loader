@@ -238,12 +238,13 @@ int yl_print(GHashTable *ht)
 /**
  * Print an individual entry in the GHashTable
  */
-GHFunc _yl_print_entry(gpointer key, gpointer value, gpointer user_data)
+void _yl_print_entry(gpointer key, gpointer value, gpointer user_data)
 {
-	int i, indent;
+	int i;
+	__u64 indent;
 	yl_obj_t *ylo;
 
-	indent = (int) user_data;	
+	indent = (__u64) user_data;	
 	ylo = (yl_obj_t*) value;
 
 	// Print the indent spaces 
@@ -255,7 +256,7 @@ GHFunc _yl_print_entry(gpointer key, gpointer value, gpointer user_data)
 	}
 	else {
 		printf("%s:\n", (char*) key);
-		g_hash_table_foreach(ylo->ht, _yl_print_entry, indent+2);	
+		g_hash_table_foreach(ylo->ht, _yl_print_entry, (void*)(indent+2));	
 	}
 }
 

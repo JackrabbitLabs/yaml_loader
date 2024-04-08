@@ -19,7 +19,7 @@
 
 #include <glib-2.0/glib.h>
 
-#include "yamlloader.h"
+#include "main.h"
 
 /* MACROS ====================================================================*/
 
